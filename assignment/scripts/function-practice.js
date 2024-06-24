@@ -134,9 +134,6 @@ function friend(friends){
   //your code here
 }
 */
-
-// I added a line to reset the isFriend array in the event that it is run over and over again to put out a new array based on the input array.
-let isFriend = [];
 function friend(friends) {
   isFriend = [];
   for (let i = 0; i < friends.length; i++) {
@@ -144,31 +141,22 @@ function friend(friends) {
       isFriend.push(friends[i]);
     }
   }
+  console.log('The Test Array is: ', friends)
+  console.log('Your friends are: ', isFriend);
   return isFriend;
 }
 
 //Test Array 1:
-friend(["Ryan", "Kieran", "Mark"])
-console.log('Test array 1 is: ', ["Ryan", "Kieran", "Mark"])
-console.log('Your friends are: ', isFriend);
+friend(["Ryan", "Kieran", "Mark"]);
 
 //Test Array 2:
-friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])
-console.log('Test array 2 is: ', ["Ryan", "Jimmy", "123", "4", "Cool Man"])
-console.log('Your friends are: ', isFriend);
+friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]);
 
 //Test Array 3:
-friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
-console.log('Test array 3 is: ', ["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
-console.log('Your friends are: ', isFriend);
+friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]);
 
 //Test Array 4:
-friend(["Love", "Your", "Face", "1"])
-console.log('Test array 1 is: ', ["Love", "Your", "Face", "1"])
-console.log('Your friends are: ', isFriend);
-
-
-
+friend(["Love", "Your", "Face", "1"]);
 
 // DO NOT MODIFY
 // Used for automated testing
