@@ -152,7 +152,7 @@ friend(["Ryan", "Kieran", "Mark"]);
 //Test Array 2:
 friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]);
 
-//Test Array 3:
+//Test Array 3:status
 friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]);
 
 //Test Array 4:
