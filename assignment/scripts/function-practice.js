@@ -107,18 +107,23 @@ console.log(sumAll([1,4,3,6,8,23,2]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+console.log("Question 10:")
 let array = [1,6,7,8,3,5,-32,-5,-26,12,3];
-let positives = [];
+
 function allPositive(array) {
-for (let item of array) {
-  if (item > 0) {
-    positives.push(item);
-  }
+  let positives = [];
+  for (let number of array) {
+    if (number > 0) {
+      positives.push(number);
+    }
+}
+console.log('The original array is: ', array)
+console.log('The positives array is: ', positives)
+
+return positives.length > 0 ? positives : [] ;
 }
 
-}
-allPositive(array);
-console.log('The positives array is: ', positives)
+
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
